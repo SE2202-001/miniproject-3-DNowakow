@@ -75,6 +75,9 @@
 
     function displayJobs(jobs) {
         const jobList = document.getElementById("job-list");
+        const jobHead = document.getElementById("jobHead")
+        
+        jobHead.innerHTML = "Available Jobs:"
         jobList.innerHTML = "";
 
         if (jobs.length === 0) {
